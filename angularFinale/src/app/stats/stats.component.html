@@ -1,0 +1,10 @@
+<h1 i18n>Moyenne de population par Région</h1>
+<mat-list>
+    <mat-list-item *ngFor="let moy of moyennePopulation" i18n>{{moy._id}} -> {{moy.avg}} habitants</mat-list-item>
+</mat-list>
+
+<h1 i18n>Moyenne de densité par Région</h1>
+<mat-list>
+    <mat-list-item *ngFor="let moy of moyenneDensite" i18n>{{moy._id}} -> {{moy.avg}} habitants par kilomètre carré</mat-list-item>
+</mat-list>
+   

@@ -1,0 +1,84 @@
+<h1 i18n style="color: red;">Ajouter les sites Touristiques avant d'ajouter la ville</h1>
+<h2 i18n>Ajout des sites touristiques</h2>
+<form>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Nom</mat-label>
+        <input matInput placeholder="Ex. Chutes Montmorency" [(ngModel)]="site.nom" name="nom" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Description</mat-label>
+        <input matInput placeholder="Ex. une chute" i18n-placeholder="Ex. Waterfalls"[(ngModel)]="site.description" name="description">
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Addresse</mat-label>
+        <input matInput placeholder="Ex. 45 rue de bob" [(ngModel)]="site.addresse" name="addresse" required>
+    </mat-form-field>
+    <button i18n mat-raised-button color="primary" (click)="addSite()" style="margin-left: 15px;">Ajouter ce site</button>
+</form>
+
+<h2 i18n>Ajout de la ville</h2>
+<form class="example-form" id="formulaireVille" #createForm="ngForm"  (ngSubmit)="addVille()">
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Nom</mat-label>
+      <input matInput placeholder="Ex. Québec" [(ngModel)]="ville.nom" name="nom" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Population</mat-label>
+      <input matInput placeholder="Ex. 800000" [(ngModel)]="ville.population" name="population" type="number" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Code Postaux</mat-label>
+      <input matInput placeholder="Ex. G1A" [(ngModel)]="codePostaux" name="codePostal">
+    </mat-form-field>
+    <button mat-flat-button i18n (click)="addCodePostal()" type="button">Ajouter</button>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Superficie</mat-label>
+      <input matInput placeholder="Ex. 1000" [(ngModel)]="ville.superficie" name="superficie" type="number" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Latitude</mat-label>
+        <input matInput placeholder="Ex. 45" [(ngModel)]="ville.latitude" name="latitude" type="number" required>
+      </mat-form-field>
+      <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Longitude</mat-label>
+        <input matInput placeholder="Ex. -70" [(ngModel)]="ville.longitude" name="longitude" type="number" required>
+      </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Altitude</mat-label>
+      <input matInput placeholder="Ex. 100" [(ngModel)]="ville.altitude" name="altitude" type="number" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Region</mat-label>
+      <input matInput placeholder="Ex. Capitale-Nationale" [(ngModel)]="ville.region" name="region" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Densité</mat-label>
+      <input matInput placeholder="Ex. 1000" [(ngModel)]="ville.densite" name="densite" type="number" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Date de Création [1500, 2022]</mat-label>
+      <input matInput [(ngModel)]="ville.dateCreation" name="dateCreation" type="number" [min]="1500" [max]="2022" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>fondateur</mat-label>
+        <input matInput placeholder="Ex. Samuel de Champlain" [(ngModel)]="ville.fondateur" name="fondateur" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="margin-left: 15px;" >
+      <mat-label i18n style="margin-left: 15px;">Conservateur au pouvoir ?</mat-label>
+      <mat-select [(ngModel)]="ville.conservateurAuPouvoir" [(value)]="ville.conservateurAuPouvoir" name="conservateur" required>
+          <mat-option>--</mat-option>
+          <mat-option [value]="true" i18n>Oui</mat-option>
+          <mat-option [value]="false" i18n>Non</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Mot de passe</mat-label>
+        <input matInput type="password" [(ngModel)]="ville.token" name="motDePasse" required>
+    </mat-form-field>
+    <button mat-raised-button [disabled]="createForm.invalid" color="primary" type="submit" style="margin-left: 15px;" i18n>Ajouter</button>
+</form>
+
+<h3 i18n>Vos sites ajoutés:</h3>
+<p *ngFor="let site of ville.SiteTouristique, let i = index">{{site.nom}}</p>
+
+

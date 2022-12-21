@@ -1,0 +1,484 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<xliff version="1.2" xmlns="urn:oasis:names:tc:xliff:document:1.2">
+  <file source-language="fr-CA" datatype="plaintext" original="ng2.template">
+    <body>
+      <trans-unit id="4959235107791564142" datatype="html">
+        <source>Le Québec est une province du Canada dont les frontières correspondent au territoire de la nation québécoise. Vivent également au sein du territoire québécois onze nations autochtones. La capitale du Québec est la Ville de Québec et sa métropole est Montréal. La langue officielle de la province est le français. Ce site les regoupes ainsi que quelques données sur ceux-ci</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/accueil/accueil.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="280179625504187285" datatype="html">
+        <source>Ajouter les sites Touristiques avant d&apos;ajouter la ville</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6236324237276517422" datatype="html">
+        <source>Ajout des sites touristiques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5363451304863092478" datatype="html">
+        <source>Nom</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">5</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">22</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">91</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4902817035128594900" datatype="html">
+        <source>Description</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6386121243722159455" datatype="html">
+        <source>Ex. une chute</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+        <note priority="1" from="description">Ex. Waterfalls</note>
+      </trans-unit>
+      <trans-unit id="8079098518349387939" datatype="html">
+        <source>Addresse</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">13</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5275322544750861312" datatype="html">
+        <source>Ajouter ce site</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4001881567581742686" datatype="html">
+        <source>Ajout de la ville</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1465150981029153833" datatype="html">
+        <source>Population</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">26</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">95</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8233637433070897337" datatype="html">
+        <source>Code Postaux</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="70397346439942337" datatype="html">
+        <source>Ajouter</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">33</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8913743292902574040" datatype="html">
+        <source>Superficie</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">35</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">38</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">99</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8314090883669143391" datatype="html">
+        <source>Latitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">39</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">103</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5174359152122758396" datatype="html">
+        <source>Longitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">43</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">107</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5241020730740347210" datatype="html">
+        <source>Altitude</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">47</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">46</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">111</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2702200797962830082" datatype="html">
+        <source>Region</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">51</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">50</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">115</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2863436795873518345" datatype="html">
+        <source>Densité</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">54</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">119</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4106795726166117744" datatype="html">
+        <source>Date de Création [1500, 2022]</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1986438753860395561" datatype="html">
+        <source>fondateur</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">63</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">127</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7953254003657576512" datatype="html">
+        <source>Conservateur au pouvoir ?</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">67</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">131</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7180575964287205441" datatype="html">
+        <source>Oui</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">70</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">134</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="4709450557795328287" datatype="html">
+        <source>Non</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">71</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">135</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5249891717669571568" datatype="html">
+        <source>Mot de passe</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">75</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">139</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1826508443255390079" datatype="html">
+        <source>Vos sites ajoutés:</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/creation-ville/creation-ville.component.html</context>
+          <context context-type="linenumber">81</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8967473898648758072" datatype="html">
+        <source>Les villes du Québec</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3476583629594890489" datatype="html">
+        <source>Accueil</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8396108165390443070" datatype="html">
+        <source>Liste</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">9</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="6774719854440890990" datatype="html">
+        <source>Statistique</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/entete/entete.component.html</context>
+          <context context-type="linenumber">10</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3981920712620321634" datatype="html">
+        <source>Créer une ville</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3206926575657541052" datatype="html">
+        <source>Nom de la ville</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">4</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5829380065548494521" datatype="html">
+        <source>Rechercher</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">7</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">14</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8201918652516563372" datatype="html">
+        <source>Région</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">11</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="646981441707986309" datatype="html">
+        <source>Toutes les villes</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">16</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="184699856871258309" datatype="html">
+        <source>L&apos;action à fonctionner!</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">19</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7433595462610521386" datatype="html">
+        <source> Population : <x id="INTERPOLATION" equiv-text="{{ville.population}}"/> </source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">28,30</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2094761462516264025" datatype="html">
+        <source>Code postaux</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">34</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1172866303261737245" datatype="html">
+        <source>Position</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">42</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2391536248130306162" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{ville.densite}}"/> habitants par kilomètre carré</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">55</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="760466775599682779" datatype="html">
+        <source>Fondation</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">58</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="187187500641108332" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{this.language ? ville.fondation : ville.fondationEN}}"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">59</context>
+        </context-group>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">73</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8225649974070551525" datatype="html">
+        <source>Sites Touristiques</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">62</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5543830529575943487" datatype="html">
+        <source>Conservateur au pouvoir</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">78</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2245893779583059427" datatype="html">
+        <source>Modifier/Supprimer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">82</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5567223248577935714" datatype="html">
+        <source>Modification d&apos;une ville</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">88</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="2466067832572790863" datatype="html">
+        <source>Date de Création</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">123</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="1785052497460968940" datatype="html">
+        <source>Modifier</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">143</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="180879386399550529" datatype="html">
+        <source>Supprimer</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">144</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3886226807522199904" datatype="html">
+        <source>Une erreur est survenue, le mot de passe peut être la cause</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">145</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7001732870998223377" datatype="html">
+        <source>Un champs est mal inscrit ou le mot de passe n&apos;est pas le bon</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/liste-ville/liste-ville.component.html</context>
+          <context context-type="linenumber">146</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3276154350950941742" datatype="html">
+        <source>Site réalisé par <x id="START_LINK" ctype="x-a" equiv-text="&lt;a href=&quot;https://www.linkedin.com/in/dereck-lachance-243a351bb/&quot; target=&quot;_blank&quot;&gt;"/>Déreck Lachance<x id="CLOSE_LINK" ctype="x-a" equiv-text="&lt;/a&gt;"/></source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pied-de-page/pied-de-page.component.html</context>
+          <context context-type="linenumber">2</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="7281649376887051365" datatype="html">
+        <source>Dans le cadre du cours de développement web 3</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/pied-de-page/pied-de-page.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="3387340556107392437" datatype="html">
+        <source>Moyenne de population par Région</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/stats/stats.component.html</context>
+          <context context-type="linenumber">1</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="5568392220560425551" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{moy._id}}"/> -&gt; <x id="INTERPOLATION_1" equiv-text="{{moy.avg}}"/> habitants</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/stats/stats.component.html</context>
+          <context context-type="linenumber">3</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8380580997228682067" datatype="html">
+        <source>Moyenne de densité par Région</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/stats/stats.component.html</context>
+          <context context-type="linenumber">6</context>
+        </context-group>
+      </trans-unit>
+      <trans-unit id="8981826599413901788" datatype="html">
+        <source><x id="INTERPOLATION" equiv-text="{{moy._id}}"/> -&gt; <x id="INTERPOLATION_1" equiv-text="{{moy.avg}}"/> habitants par kilomètre carré</source>
+        <context-group purpose="location">
+          <context context-type="sourcefile">src/app/stats/stats.component.html</context>
+          <context context-type="linenumber">8</context>
+        </context-group>
+      </trans-unit>
+    </body>
+  </file>
+</xliff>

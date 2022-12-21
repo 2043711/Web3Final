@@ -1,0 +1,148 @@
+<button i18n matNativeControl mat-raised-button color="warn" style="margin: 15px;" (click)="changePage('creation-ville')">Créer une ville</button>
+<form class="example-form" (ngSubmit)="getVillesByNom(nomVille)">
+    <mat-form-field class="example-full-width" style="margin-left: 15px;">
+      <mat-label i18n>Nom de la ville</mat-label>
+      <input matInput placeholder="Ex. Québec" [(ngModel)]="nomVille" name="nomVille">
+    </mat-form-field>
+    <button i18n matNativeControl mat-raised-button style="margin-left: 15px;">Rechercher</button>
+</form>
+<form class="example-form" (ngSubmit)="getVillesByRegion(nomRegion)">
+    <mat-form-field class="example-full-width" style="margin-left: 15px;">
+      <mat-label i18n>Région</mat-label>
+      <input matInput placeholder="Ex. Centre-du-Québec" [(ngModel)]="nomRegion" name="nomRegion">
+    </mat-form-field>
+    <button i18n matNativeControl mat-raised-button style="margin-left: 15px;">Rechercher</button>
+</form>
+<button i18n matNativeControl mat-raised-button style="margin: 15px;" (click)="getVilles()">Toutes les villes</button>
+  
+<div *ngIf="successMessage" class="popup">
+    <p i18n>L'action à fonctionner!</p>
+</div>
+
+<mat-accordion>
+    <mat-expansion-panel *ngFor="let ville of villes; let i = index">
+        <mat-expansion-panel-header>
+            <mat-panel-title>
+                {{ville.nom}}
+            </mat-panel-title>
+            <mat-panel-description i18n>
+                Population : {{ville.population}}
+            </mat-panel-description>
+        </mat-expansion-panel-header>
+        <mat-list>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Code postaux</h4>
+                <p matLine>{{ville.codePostal}}</p>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Superficie</h4>
+                <p matLine>{{ville.superficie}} ha</p>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Position</h4>
+                <p matLine>{{ville.position}}</p>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Altitude</h4>
+                <p matLine>{{ville.altitude}}m</p>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Region</h4>
+                <p matLine>{{ville.region}}</p>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Densité</h4>
+                <p matLine i18n>{{ville.densite}} habitants par kilomètre carré</p>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Fondation</h4>
+                <p matLine i18n>{{this.language ? ville.fondation : ville.fondationEN}}</p>
+            </mat-list-item>
+            <mat-list-item style="overflow-y: scroll; height: 160px;">
+                <h4 i18n matLine>Sites Touristiques</h4>
+                <mat-accordion>
+                    <mat-expansion-panel *ngFor="let site of ville.SiteTouristique; let i = index">
+                        <mat-expansion-panel-header>
+                            <mat-panel-title>
+                                {{site.nom}}
+                            </mat-panel-title>
+                            <mat-panel-description>
+                                {{site.addresse}}
+                            </mat-panel-description>
+                        </mat-expansion-panel-header>
+                        <p matLine i18n>{{site.description}}</p>
+                    </mat-expansion-panel>
+                </mat-accordion>
+            </mat-list-item>
+            <mat-list-item class="itemListe">
+                <h4 i18n matLine>Conservateur au pouvoir</h4>
+                <mat-icon *ngIf="ville.conservateurAuPouvoir" style="margin-left: 15px; color: green;">check</mat-icon>
+                <mat-icon *ngIf="!ville.conservateurAuPouvoir" style="margin-left: 15px; color: red;">close</mat-icon>
+            </mat-list-item>
+            <button i18n matNativeControl mat-raised-button color="primary" style="margin: 15px;" (click)="ChangeVille(ville)">Modifier/Supprimer</button>
+        </mat-list>
+    </mat-expansion-panel>
+    <mat-divider></mat-divider>
+  </mat-accordion>
+
+  <h2 i18n style="margin-top: 25px;">Modification d'une ville</h2>
+<form class="example-form" id="formulaireVille" #modifierForm="ngForm" (ngSubmit)="PutDeleteVille()" >
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Nom</mat-label>
+      <input matInput placeholder="Ex. Québec" [(ngModel)]="ville.nom" name="nom" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Population</mat-label>
+      <input matInput placeholder="Ex. 800000" [(ngModel)]="ville.population" type="number" name="population" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Superficie</mat-label>
+      <input matInput placeholder="Ex. 1000" [(ngModel)]="ville.superficie" type="number" name="superficie" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Latitude</mat-label>
+        <input matInput placeholder="Ex. 45" [(ngModel)]="ville.latitude" type="number" name="latitude" required>
+      </mat-form-field>
+      <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Longitude</mat-label>
+        <input matInput placeholder="Ex. -70" [(ngModel)]="ville.longitude" type="number" name="longitude" required>
+      </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Altitude</mat-label>
+      <input matInput placeholder="Ex. 100" [(ngModel)]="ville.altitude" type="number" name="altitude" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Region</mat-label>
+      <input matInput placeholder="Ex. Capitale-Nationale" [(ngModel)]="ville.region" name="region" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Densité</mat-label>
+      <input matInput placeholder="Ex. 1000" [(ngModel)]="ville.densite" type="number" name="densite" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+      <mat-label i18n>Date de Création</mat-label>
+      <input matInput [(ngModel)]="ville.dateCreation" type="number" [min]="1500" [max]="2022" name="dateCreation" required>
+    </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>fondateur</mat-label>
+        <input matInput placeholder="Ex. Samuel de Champlain" [(ngModel)]="ville.fondateur" name="fondateur" required>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="margin-left: 15px;" >
+        <mat-label i18n style="margin-left: 15px;">Conservateur au pouvoir ?</mat-label>
+        <mat-select [(ngModel)]="ville.conservateurAuPouvoir" [(value)]="ville.conservateurAuPouvoir" name="conservateur" required>
+            <mat-option>--</mat-option>
+            <mat-option [value]="true" i18n>Oui</mat-option>
+            <mat-option [value]="false" i18n>Non</mat-option>
+        </mat-select>
+      </mat-form-field>
+    <mat-form-field  style="margin-left: 15px;">
+        <mat-label i18n>Mot de passe</mat-label>
+        <input matInput type="password" [(ngModel)]="ville.token" name="motDePasse" required>
+    </mat-form-field>
+    <mat-divider style="padding-bottom: 5px"></mat-divider>
+    <button i18n [disabled]="modifierForm.invalid" i18n mat-raised-button color="accent" (click)="this.choice = 2" type="submit" style="margin-left: 15px;">Modifier</button>
+    <button i18n [disabled]="modifierForm.invalid" i18n mat-raised-button color="warn" (click)="this.choice = 1" type="submit" style="margin-left: 15px;">Supprimer</button>
+    <p i18n style="color: red" *ngIf="errorDelete">Une erreur est survenue, le mot de passe peut être la cause</p>
+    <p i18n style="color: red" *ngIf="errorModifier">Un champs est mal inscrit ou le mot de passe n'est pas le bon</p>
+</form>
+   

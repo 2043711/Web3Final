@@ -1,0 +1,13 @@
+
+<p style="margin: 0px">
+    <mat-toolbar color="primary">
+        <span i18n id="title">Les villes du Québec</span>
+        <span class="example-spacer"></span>
+        <button mat-icon-button [matMenuTriggerFor]="menu" class="menu"><mat-icon>Menu</mat-icon></button>
+        <mat-menu #menu="matMenu" xPosition="before"> 
+            <button i18n mat-menu-item (click)="changePage('')">Accueil</button>
+            <button i18n mat-menu-item (click)="changePage('liste-ville')">Liste</button>
+            <button i18n mat-menu-item (click)="changePage('stats')">Statistique</button>
+        </mat-menu>
+    </mat-toolbar>
+  </p>
