@@ -46,6 +46,10 @@ villeSchema.virtual('fondation').get(function () {
     return "Fondée en " + this.dateCreation + " par " + this.fondateur;
 });
 
+villeSchema.virtual('fondationEN').get(function () {
+    return "Founded in " + this.dateCreation + " by " + this.fondateur;
+});
+
 villeSchema.virtual("position").get(function () {
     return this.latitude + ', ' + this.longitude;
 });
